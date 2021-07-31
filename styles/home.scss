@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 250px 550px 250px;
+    grid-template-areas: ". header main aside .";
+}
+
+@import "header";
+@import "main";
+@import "aside";

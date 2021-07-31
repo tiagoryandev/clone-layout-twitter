@@ -1,0 +1,207 @@
+aside {
+    grid-area: aside;
+    .main {
+        height: 100vh;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .photos {
+            padding: 10px;
+    
+            .navgation {
+                cursor: pointer;
+                margin-bottom: 10px;
+                user-select: none;
+                color: gray;
+                font-weight: bold;
+    
+                span {
+                    margin-right: 5px;
+                    font-size: 18px;
+                    font-weight: bolder;
+                    color: #1f9aea;
+                }
+            }
+    
+            .images {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+    
+                .box {
+                    margin: 5px;
+                    width: 66px;
+                    height: 66px;
+                    background-color: #1f9aea;
+                }
+            }
+        }
+    
+        .trends {
+            padding: 0px 15px 15px 15px;
+    
+            .box {
+                width: 100%;
+                background-color: #ecf9ff;
+                border-radius: 10px;
+    
+                .title {
+                    font-family: Arial;
+                    color: black;
+                    font-weight: bold;
+                    padding: 15px;
+                    border-bottom: 4px solid white;
+    
+                    &::after {
+                        display: inline-block;
+                        
+                        content: "";
+                        position: relative;
+                        margin-left: 20px;
+                        margin-top: 0px;
+                        width: 14px;
+                        height: 14px;
+                        background-color: #1f9aea;
+                        border-radius: 50%;
+                    }
+                }
+    
+                .trend {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                    border-bottom: 4px solid white;
+    
+                    .content {
+                        padding-left: 5px;
+    
+                        .name {
+                            user-select: none;
+                            font-size: 14px;
+                            color: gray;
+                        }
+    
+                        .hashtag {
+                            font-family: Arial;
+                            user-select: none;
+                            cursor: pointer;
+                            margin-top: 5px;
+                            font-weight: bold;
+                        }
+                    }
+    
+                    .arrow {
+                        margin-top: 5px;
+    
+                        .line1, .line2 {
+                            width: 12px;
+                            height: 3px;
+                            background-color: gray;
+                        }
+    
+                        .line1 {
+                            transform: rotate(45deg) translateX(3px);
+                        }
+    
+                        .line2 {
+                            margin-left: 9px;
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+    
+                .more {
+                    font-family: Arial;
+                    width: 100%;
+                    padding: 15px;
+                    font-weight: bold;
+                    color: #1f9aea;
+                    cursor: pointer;
+                    user-select: none;
+                }
+            }
+        }
+    
+        .suggestions {
+            padding: 0px 15px 15px 15px;
+    
+            .box {
+                width: 100%;
+                min-height: 50px;
+                background-color: #ecf9ff;
+                border-radius: 10px;
+    
+                .title {
+                    padding: 15px;
+                    font-weight: bold;
+                    font-family: Arial;
+                    border-bottom: 4px solid white;
+                }
+    
+                .user {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 4px solid white;
+                    padding: 15px;
+    
+                    .info {
+                        display: flex;
+                        align-items: center;
+    
+                        .avatar {
+                            width: 35px;
+                            height: 35px;
+                            background-image: url("../assets/avatar.png");
+                            background-position: center;
+                            background-size: cover;
+                            border-radius: 50%;
+                        }
+    
+                        .content {
+                            margin-left: 7px;
+    
+                            .username {
+                                user-select: none;
+                                cursor: pointer;
+                                font-size: 14px;
+                                color: rgb(73, 73, 73);
+                            }
+    
+                            .description {
+                                user-select: none;
+                                font-size: 14px;
+                                color: gray;
+                            }
+                        }
+                    }
+    
+                    button {
+                        user-select: none;
+                        cursor: pointer;
+                        outline: none;
+                        font-size: 10px;
+                        color: #1f9aea;
+                        border: 1px solid #1f9aea;
+                        padding: 5px 7px;
+                        border-radius: 10px;
+                    }
+                }
+    
+                .more {
+                    font-family: Arial;
+                    width: 100%;
+                    padding: 15px;
+                    font-weight: bold;
+                    color: #1f9aea;
+                    cursor: pointer;
+                    user-select: none;
+                }
+            }
+        }
+    }
+}
